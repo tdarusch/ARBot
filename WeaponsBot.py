@@ -4,14 +4,14 @@ from requests.exceptions import HTTPError, ReadTimeout
 from prawcore.exceptions import RequestException
 
 reddit = praw.Reddit(
-    client_id='XSN-2nq-EV8uNA',
-    client_secret='Yc4FSwypfU-HJXwLkDIhQjbjIdc',
-    password='gighia123',
-    user_agent='misc. bot created by tom /u/flashinessgotrekt',
-    username='ARRequestBot'
+    client_id='#######',
+    client_secret='######',
+    password='##########',
+    user_agent='Weapons Bot by Tom/ /u/FlashinessGotRekt',
+    username='TBD'
 )
 
-subreddit = reddit.subreddit('FlaxTesting')
+subreddit = reddit.subreddit('TBD')
 
 bots = ["/u/weaponsbot"]
 
@@ -183,39 +183,7 @@ def sort(a):
             if weapontable[str(a)][6] < recoil:
                 recoil = weapontable[str(a)][6]
                 hrecoil = str(a)
-
-
-'''def parsesubmissions():
-    for submission in subreddit.stream.submissions():
-        logwrite = open("ReplyDirectory.txt", "r+")
-        botmatch = any(string in submission.selftext.lower() for string in bots)
-        weapmatch = any(string in submission.selftext.lower() for string in weapontable)
-        body = submission.selftext.lower()
-        if botmatch and weapmatch and submission.id not in logwrite.read():
-            weapons = []
-            if any(string in submission.selftext for string in weapontable):
-                final = []
-                for z in weapontable:
-                    if z in body and z not in weapons:
-                        weapons.append(str(z))
-                if len(weapons) > 1:
-                    for m in weapons:
-                        sort(m)
-                for wep in weapons:
-                    final.append(str(wtw(wep)))
-                t = "".join(final)
-                submission.reply("Weapon|Damage|DPS|Firerate|ADS Spread|Hipfire Spread|"
-                                 "Recoil|Attachment Capabilities|Magazine Capacities"
-                                 "\n :-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-: \n" + t + '\n \n' "*Underbarrel + Grip "
-                                                                                   "= Takes "
-                                                                                   "grips, Underbarrel = Doesn't take "
-                                                                                   "grips (only takes flashlight and "
-                                                                                   "laser)*")
-                print(str(submission.id) + " - " + str(submission.author) + " - " + str(submission.title))
-                logwrite.write(str(submission.id) + '\n')'''
-
-
-
+                
 def CheckLog(id):
     with open("ReplyDirectory.txt", "r+") as file:
         found = any(str(id) in line.split() for line in file)
