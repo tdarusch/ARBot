@@ -11,9 +11,9 @@ reddit = praw.Reddit(
     username='TBD'
 )
 
-subreddit = reddit.subreddit('FlaxTesting')
+subreddit = reddit.subreddit('TBD')
 
-bots = ["/u/weaponsbot"]
+bots = ["/u/TBD"]
 
 weapontable = {'ak47': ["AK-47", 20, 223, 700, 3, 18.25, 11, "Barrel, Scope", '30, 40, 75', "Assault Rifle"],
                'ak74': ["AK-74", 17, 184, 650, 2.5, 16.5, 7, "Barrel, Scope", "30, 45, 75", "Assault Rifle"],
@@ -80,11 +80,11 @@ weapontable = {'ak47': ["AK-47", 20, 223, 700, 3, 18.25, 11, "Barrel, Scope", '3
                }
 
 meleetable = {
-    'combatknife': ["Combat Knife", 24, "Fast"],
+    'combatknife': ["Combat Knife", 24, "**Fast**"],
     'crowbar': ["Crowbar", 26, "Slow"],
     'hatchet': ["Hatchet", 30, "Slow"],
-    "sabre": ["Sabre", 30, "Fast"],
-    'katana': ['Katana', 'Unknown', 'Fast']
+    "sabre": ["Sabre", 30, "**Fast**"],
+    'katana': ['Katana', 'Unknown', '**Fast**']
 }
 
 
