@@ -7,7 +7,7 @@ reddit = praw.Reddit(
     client_id='#######',
     client_secret='######',
     password='##########',
-    user_agent='Weapons Bot by Tom/ /u/FlashinessGotRekt',
+    user_agent='Weapons Bot by Tom/ /u/###########',
     username='TBD'
 )
 
